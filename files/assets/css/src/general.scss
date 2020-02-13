@@ -1,0 +1,49 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'Eurostile LT Std', sans-serif;
+  src: url("../fonts/EurostileLTStd.woff") format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Eurostile LT Std', sans-serif;
+  src: url("../fonts/EurostileLTStd-Bold.woff") format('woff');
+  font-weight: bold;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+figure {
+  margin-bottom: -6px;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-weight: normal;
+  color: $primary-color;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+p, ul li {
+  line-height: 1.6em;
+}
+
+.eurostile {
+  font-family: 'Eurostile LT Std', sans-serif;
+  font-weight: bold;
+  text-transform: none;
+}
+
+
+@import 'header';
+@import 'main';
+@import 'footer';

@@ -1,0 +1,184 @@
+@import 'variables';
+
+.header-image {
+  position: absolute;
+  width: 100%;
+  figure {
+    position: relative;
+    max-height: 1000px;
+    img {
+      width: 100%;
+      margin-top: -260px;
+    }
+    figcaption {
+      position: absolute;
+      bottom: 20px;
+      height: 60px;
+      width: 100%;
+      ul {
+        position: absolute;
+        right: 15%;
+        width: 620px;
+        font-size: 25pt;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-weight: 300;
+        li {
+          position: relative;
+          padding-right: 13px;
+          line-height: 1em;
+          &:not(:last-child):after {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            content: '';
+            width: 2px;
+            height: 25px;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-layover {
+  position: relative;
+  width: 55%;
+  max-height: 1000px;
+  img {
+    width: 100%;
+    margin-top: -3vw;
+  }
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.mobile_menu_trigger {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  top: 15vw;
+  right: 25vw;
+  background: #61bb46;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  img {
+    width: 65%;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+}
+
+.mobile_menu .inner {
+  background: rgba(140,198,65,1) url("../../layout/imr-bg.png");
+  background-image: url("../../layout/imr-bg.png"), -moz-linear-gradient(left, rgba(140,198,65,1) 0%, rgba(97,187,70,1) 100%);
+  background-image: url("../../layout/imr-bg.png"), -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(140,198,65,1)), color-stop(100%, rgba(97,187,70,1)));
+  background-image: url("../../layout/imr-bg.png"), -webkit-linear-gradient(left, rgba(140,198,65,1) 0%, rgba(97,187,70,1) 100%);
+  background-image: url("../../layout/imr-bg.png"), -o-linear-gradient(left, rgba(140,198,65,1) 0%, rgba(97,187,70,1) 100%);
+  background-image: url("../../layout/imr-bg.png"), -ms-linear-gradient(left, rgba(140,198,65,1) 0%, rgba(97,187,70,1) 100%);
+  background-image: url("../../layout/imr-bg.png"), linear-gradient(to right, rgba(140,198,65,1) 0%, rgba(97,187,70,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cc641', endColorstr='#61bb46', GradientType=1 );
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  .ce_text {
+    width: 80%;
+    margin: 10vw auto 0;
+    h2 {
+      color: white;
+      border-bottom: none;
+      font-family: 'Eurostile LT Std', sans-serif;
+      font-weight: bold;
+    }
+    ul {
+      width: 50%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        position: relative;
+        color: white;
+        padding: 11px;
+        &:not(:last-child) {
+          border-bottom: 1px solid;
+        }
+        &:before {
+          position: absolute;
+          content: '>';
+          top: 10px;
+          left: 0;
+          width: 5px;
+          height: 20px;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.menu-close {
+  color: #69bd45;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 0 10px #888;
+  position: absolute;
+  top: 2vw;
+  right: 20vw;
+  width: 100px;
+  height: 100px;
+  text-decoration: none;
+  font-size: 80pt;
+  line-height: 0.9em;
+  text-align: center;
+}
+
+@media screen and (max-width: $smartphone) {
+  .header-image {
+    position: relative;
+    figure {
+      position: relative;
+      figcaption {
+        display: none;
+      }
+      img {
+        margin-top: 0;
+        height: 415px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .mobile_menu_trigger {
+    top: 326px;
+    right: 28%;
+    width: 47px;
+    height: 47px;
+  }
+
+  .header-layover {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    figure img {
+      height: 415px;
+    }
+  }
+}
