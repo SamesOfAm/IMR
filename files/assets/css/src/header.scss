@@ -1,5 +1,24 @@
 @import 'variables';
 
+.title-article {
+  position: relative;
+}
+
+.claim {
+  position: absolute;
+  bottom: 117px;
+  right: 6%;
+  width: 45%;
+  padding-bottom: 15px;
+  color: white;
+  p:first-child {
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.4);
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
 .header-image {
   position: absolute;
   width: 100%;
@@ -11,6 +30,7 @@
       margin-top: -260px;
     }
     figcaption {
+      display: none;
       position: absolute;
       bottom: 20px;
       height: 60px;
@@ -49,11 +69,12 @@
 
 .header-layover {
   position: relative;
-  width: 55%;
+  width: 85%;
   max-height: 1000px;
   img {
     width: 100%;
-    margin-top: -3vw;
+    margin-top: -20vw;
+    margin-left: -30vw;
   }
 }
 
@@ -65,8 +86,8 @@
   position: absolute;
   width: 4vw;
   height: 4vw;
-  top: 15vw;
-  right: 25vw;
+  top: 2vw;
+  right: 20vw;
   background: #61bb46;
   text-align: center;
   cursor: pointer;
@@ -92,8 +113,9 @@
   background-position: bottom;
   background-size: contain;
   .ce_text {
-    width: 80%;
-    margin: 10vw auto 0;
+    width: 45%;
+    float: right;
+    margin-top: 10vw;
     h2 {
       color: white;
       border-bottom: none;
@@ -136,12 +158,26 @@
   position: absolute;
   top: 2vw;
   right: 20vw;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   text-decoration: none;
-  font-size: 80pt;
+  font-size: 63pt;
   line-height: 0.9em;
   text-align: center;
+}
+
+.title-link {
+  display: inline;
+  a {
+    text-decoration: none;
+    background: url('../../layout/cta.png') 0%/cover;
+    color: white;
+    padding: 15px 30px;
+  }
+}
+
+.title-logos {
+  margin-top: 60px;
 }
 
 @media screen and (max-width: $smartphone) {

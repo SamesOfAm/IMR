@@ -1,9 +1,8 @@
 @import 'variables';
 #intro-text {
-  width: 50%;
-  margin: 120px 0 40px;
+  margin-bottom: 40px;
   float: left;
-  > .ce_text:first-child {
+  > .ce_text {
     width: 80%;
     margin: 0 auto;
   }
@@ -11,6 +10,32 @@
     width: 60%;
     margin: 0 auto;
   }
+  .ce_gallery {
+    width: 80%;
+    margin: 0 auto 75px;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        width: 25%;
+        display: flex;
+        figure {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.intro-text-inside {
+  width: 46%;
+  margin-right: 4%;
+  float: left;
+}
+
+.intro-image-inside {
+  width: 50%;
+  float: left;
 }
 
 #fernwartung,#contact-form {
@@ -217,13 +242,13 @@
     background-color: white;
     margin: 2px;
     padding: 5px 15px;
-    width: 18%;
+    width: 26%;
     display: inline-block;
     text-transform: uppercase;
     color: #666;
   }
   input,textarea {
-    width: 73%;
+    width: 65%;
     border: none;
     padding: 5px 15px;
     margin: 2px;
@@ -291,6 +316,25 @@
   }
   input {
     width: 20px;
+  }
+  .form-products {
+    legend {
+      width: 95.4%;
+      background-color: #fff;
+      margin: 2px;
+      padding: 5px 15px;
+      display: inline-block;
+      text-transform: uppercase;
+      color: #666;
+    }
+    span {
+      display: flex;
+      float: left;
+      width: 25%;
+      height: auto;
+      margin: 35px 5px;
+      background: rgba(255,255,255,0.3);
+    }
   }
 }
 
@@ -438,6 +482,7 @@
         width: 70%;
       }
     }
+
   }
 
   #contact-form .submit {
