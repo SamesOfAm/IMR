@@ -248,10 +248,10 @@
     color: #666;
   }
   input,textarea {
-    width: 65%;
+    width: 65.1%;
     border: none;
     padding: 5px 15px;
-    margin: 2px;
+    margin: 4px auto;
     background-color: rgba(255,255,255,0.7);
     cursor: pointer;
     transition: background-color 250ms;
@@ -454,12 +454,16 @@
   }
 
   #contact-form input, #contact-form textarea {
-    width: 49%;
+    width: 92%;
+  }
+
+  #contact-form .widget-textarea {
+    display: block;
   }
 
   #contact-form label {
-    margin: 2px 10px;
-    width: 24%;
+    margin: 4px auto;
+    width: 100%;
   }
 
   #partner-logos .ce_gallery ul {
@@ -474,8 +478,8 @@
 
   #contact-form .widget-checkbox {
     position:relative;
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 4px auto;
     span {
       display: flex;
       label {
@@ -490,6 +494,10 @@
     width: 100%;
     margin: 0 auto 40px;
     display: block;
+  }
+
+  .intro-text-inside {
+    width: 100%;
   }
 
 }

@@ -1,0 +1,10 @@
+<?php $this->extend('block_searchable'); ?>
+
+<?php $this->block('content'); ?>
+
+  <p class="download-element software ext-<?= $this->extension ?>">
+  	<img src="files/layout/fernwartung.png">
+    <a href="<?= $this->href ?>" title="<?= $this->title ?>"><?= $this->link ?> <span class="size">(<?= $this->filesize ?>)</span></a>
+  </p>
+
+<?php $this->endblock(); ?>

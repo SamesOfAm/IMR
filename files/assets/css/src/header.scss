@@ -12,6 +12,7 @@
   padding-bottom: 15px;
   color: white;
   p:first-child {
+    margin-bottom: 30px;
     padding: 15px 30px;
     background: rgba(0,0,0,0.4);
     font-weight: bold;
@@ -92,12 +93,19 @@
   text-align: center;
   cursor: pointer;
   z-index: 1;
+  transition: right 250ms ease-in-out;
   img {
     width: 65%;
     top: 50%;
     position: relative;
     transform: translateY(-50%);
   }
+}
+
+.trigger-fixed {
+  position: fixed;
+  right: -15px;
+  border: 15px solid white;
 }
 
 .mobile_menu .inner {
@@ -216,5 +224,12 @@
     figure img {
       height: 415px;
     }
+  }
+
+  .claim {
+    position: relative;
+    bottom: 16px;
+    right: 0;
+    width: 100%;
   }
 }
