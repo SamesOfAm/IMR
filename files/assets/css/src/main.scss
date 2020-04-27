@@ -93,6 +93,9 @@
   clear: both;
   display: flex;
   flex-wrap: wrap;
+  figure img {
+    width: 100%;
+  }
 }
 
 .half {
@@ -115,7 +118,7 @@
     margin-right: 10%;
   }
   h3,h4 {
-    width: 170px;
+    width: 320px;
   }
   p, ul {
     width: 320px;
@@ -128,7 +131,7 @@
 .half-right {
   position: relative;
   h3,h4 {
-    width: 170px;
+    width: 320px;
     margin-left: 10%;
   }
   p, ul {
@@ -330,9 +333,9 @@
     span {
       display: flex;
       float: left;
-      width: 25%;
+      width: 23%;
       height: auto;
-      margin: 35px 5px;
+      margin: 5px 2px;
       background: rgba(255,255,255,0.3);
     }
   }
@@ -347,11 +350,20 @@
     max-width: $max-width;
     margin: 0 auto;
     align-items: center;
+    li {
+      width: 22%;
+    }
   }
 }
 
 .mobile-only {
   display: none;
+}
+
+.imprint {
+  width: $width;
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: $smartphone) {
@@ -470,10 +482,16 @@
     display: block;
   }
 
-  .ce_gallery > ul li {
+  #partner-logos .ce_gallery > ul li {
     float: none;
     width: 60%;
-    margin: 0 auto;
+    margin: 40px auto;
+    &:last-child {
+      margin-top: 80px;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   #contact-form .widget-checkbox {
@@ -485,6 +503,9 @@
       label {
         width: 70%;
       }
+    }
+    .form-products span {
+      width: 100%;
     }
 
   }
