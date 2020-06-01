@@ -118,7 +118,7 @@
     margin-right: 10%;
   }
   h3,h4 {
-    width: 320px;
+    width: 100%;
   }
   p, ul {
     width: 320px;
@@ -131,7 +131,7 @@
 .half-right {
   position: relative;
   h3,h4 {
-    width: 320px;
+    width: 100%;
     margin-left: 10%;
   }
   p, ul {
@@ -345,7 +345,8 @@
   margin: 120px 0;
   ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: $width;
     max-width: $max-width;
     margin: 0 auto;
