@@ -83,6 +83,21 @@
   display: none;
 }
 
+.mobile_menu_active{
+  body{
+    overflow-y: hidden;
+  }
+}
+
+.full_screen{
+  img{
+    width: 100%;
+  }
+}
+
+
+
+
 .mobile_menu_trigger {
   position: absolute;
   width: 4vw;

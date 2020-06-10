@@ -372,6 +372,20 @@
     display: block;
   }
 
+  #contact-form input.text, #contact-form textarea.textarea{
+    width:100% !important;
+  }
+
+
+  .mobile_menu .inner .ce_text {
+    width:93% !important;
+    float: unset !important;
+    margin-left: 10px !important;
+  }
+  .mobile_menu .inner .ce_text ul {
+    width: 100% !important;;
+  }
+
   #intro-text, #fernwartung, #contact-form {
     width: 100%;
     margin-top: 35px;
