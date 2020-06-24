@@ -244,20 +244,22 @@
   label {
     background-color: white;
     margin: 2px;
-    padding: 5px 15px;
+    padding: 7px 15px 2px 15px;
     width: 26%;
     display: inline-block;
     text-transform: uppercase;
     color: #666;
+    min-height: 20px;
   }
   input,textarea {
     width: 65.1%;
     border: none;
-    padding: 5px 15px;
+    padding: 5px 15px 3px 15px;
     margin: 4px auto;
     background-color: rgba(255,255,255,0.7);
     cursor: pointer;
     transition: background-color 250ms;
+    min-height: 20px;
     &:hover {
       background-color: rgba(255,255,255,0.9);
     }
@@ -333,7 +335,7 @@
     span {
       display: flex;
       float: left;
-      width: 23%;
+      width: 49.25%;
       height: auto;
       margin: 5px 2px;
       background: rgba(255,255,255,0.3);
@@ -366,6 +368,47 @@
   max-width: $max-width;
   margin: 0 auto;
 }
+
+.versendet{
+  width: $width;
+  max-width: $max-width;
+  margin: 30px auto;
+}
+.versendet_img img{
+  object-fit: cover;
+  height: 508px;
+  width: 100%;
+}
+
+/////////////////////////////////////////////////////////////Versendet Icon Animation
+.slide-right {
+  -webkit-animation: slide-right 2.3s cubic-bezier(0.860, 0.000, 0.070, 1.000) 0.4s  both;
+  animation: slide-right 2.3s cubic-bezier(0.860, 0.000, 0.070, 1.000) 0.4s  both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+
+/////////////////////////////////////////////////////////////Versendet Icon Animation__ENDE
+
 
 @media screen and (max-width: $smartphone) {
   .mobile-only {

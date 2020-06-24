@@ -17,6 +17,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+label, button, input, textarea{
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  text-transform: none;
+  font-size: 0.9em;
+
+}
+
 figure {
   margin-bottom: -6px;
 }
